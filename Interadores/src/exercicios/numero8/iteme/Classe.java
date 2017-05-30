@@ -13,15 +13,19 @@ package exercicios.numero8.iteme;
 public class Classe {
 
 	public static void main(String[] args) {
-		
+
 		int soma = 0;
-		for (int aux = 0; aux <= 10; aux++) {
+		for (int aux = 0; aux <= 28; aux++) {
 
 			if (soma < 28) {
 				soma = soma + aux;
-				System.out.println(soma);
-			}
+				if (soma == 28) {
+					System.out.print(soma);
+				} else {
+					System.out.print(soma + ",");
+				}
 
+			}
 		}
 	}
 }
